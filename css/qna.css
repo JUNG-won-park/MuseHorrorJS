@@ -1,0 +1,26 @@
+#qna {
+    display: none;
+}
+
+.qBox {
+    text-align: left;
+    font-size: 25px;
+}
+
+.imgBox {
+    max-width: 700px;
+    max-height: 500px;
+    display: block;
+    margin: auto;
+}
+
+.answerList {
+     /* background-color: #dc3545; */
+    border: none;
+    font-size: 18px;
+}
+
+.answerList:hover, .answerList:focus {
+    background-color: rgb(200,200,200);
+    color: rgb(30, 30, 30);
+}
