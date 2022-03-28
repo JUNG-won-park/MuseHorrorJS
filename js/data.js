@@ -3,45 +3,45 @@ const qnaList = [
     q: '1. Colorful life',
     img: './img/art1.png',
     a: [
-      { answer: 'a. Calvin Harris - Slide', type: ['cow', 'tiger', 'dragon', 'chick'] },
-      { answer: 'b. Doctor U - Many pills', type: ['mouse', 'rabbit', 'horse', 'snake', 'dog', 'monkey'] },
-      { answer: 'c. Demian Hirst - Utopia', type: ['sheep', 'pig' ] },
+      { answer: 'a. Calvin Harris - Slide', type: ['0'] },
+      { answer: 'b. Doctor U - Many pills', type: ['5'] },
+      { answer: 'c. Demian Hirst - Utopia', type: ['10'] },
     ]
   },
   {
     q: '2. They teach us nothing',
     img: './img/art2.png',
     a: [
-      { answer: 'a. Jake & Dinos Chapman - Minderwertigkinder', type: ['cow', 'tiger', 'dragon', 'chick'] },
-      { answer: 'b. Pablo Picasso - The animal kid', type: ['mouse', 'rabbit', 'horse', 'snake', 'dog', 'monkey'] },
-      { answer: 'c. Antoni Gaudí - Oftenly I build something but the animal art', type: ['sheep', 'pig' ] },
+      { answer: 'a. Jake & Dinos Chapman - Minderwertigkinder', type: ['10'] },
+      { answer: 'b. Pablo Picasso - The animal kid', type: ['0'] },
+      { answer: 'c. Antoni Gaudí - Oftenly I build something but the animal art', type: ['5'] },
     ]
   },
   {
     q: '3. Ill have BigMac today.',
     img: './img/art3.png',
     a: [
-      { answer: 'a. Jake & Dinos Chapman - Zombies, Coat Hangers, and Liquorice', type: ['cow', 'rabbit', 'tiger', 'dog', 'monkey'] },
-      { answer: 'b. Ronald McDonald - We rule the world', type: ['sheep', 'chick', 'pig'] },
-      { answer: 'c. Donald Trump - Healthy meal for your lunch', type: ['mouse', 'horse', 'snake', 'dragon'] }
+      { answer: 'a. Jake & Dinos Chapman - Zombies, Coat Hangers, and Liquorice', type: ['10'] },
+      { answer: 'b. Ronald McDonald - We rule the world', type: ['0'] },
+      { answer: 'c. Donald Trump - Healthy meal for your lunch', type: ['5'] }
     ]
   },
   {
     q: '4. U R not scary anymore',
     img: './img/art4.png',
     a: [
-      { answer: 'a. Steven Spielberg - Jaws the Scary animal in the ocean', type: ['cow', 'tiger', 'dragon' ] },
-      { answer: 'b. Will Smith - Shark tale" ', type: ['sheep', 'dog', 'monkey', 'chick', 'pig' ] },
-      { answer: 'c. Demian Hirst - The Physical Impossibility of Death in the Mind of Someone Living ', type: ['mouse', 'rabbit', 'horse', 'snake' ] },
+      { answer: 'a. Steven Spielberg - Jaws the Scary animal in the ocean', type: ['5'] },
+      { answer: 'b. Will Smith - Shark tale" ', type: ['0'] },
+      { answer: 'c. Demian Hirst - The Physical Impossibility of Death in the Mind of Someone Living ', type: ['10'] },
     ]
   },
   {
     q: '5. 20200407',
     img: './img/art5.png',
     a: [
-      { answer: 'a. Pyramid', type: ['cow', 'sheep', 'dog', 'dragon', 'chick' ] },
-      { answer: 'b. Egyptian Museum', type: ['mouse', 'rabbit', 'horse', 'pig']},
-      { answer: 'c. Muse Horror Concept art', type: ['tiger', 'snake', 'monkey'] },
+      { answer: 'a. Pyramid', type: ['0'] },
+      { answer: 'b. Egyptian Museum', type: ['5']},
+      { answer: 'c. Muse Horror Concept art', type: ['10'] },
     ]
   },
 
@@ -49,9 +49,9 @@ const qnaList = [
     q: '6. 2015',
     img: './img/art6.png',
     a: [
-      { answer: 'a. Cat', type: ['dragon', 'chick', 'pig' ] },
-      { answer: 'b. Dog', type: ['mouse', 'rabbit', 'horse', 'dog' ] },
-      { answer: 'c. Tiger', type: ['cow', 'sheep', 'tiger', 'snake', 'monkey' ] },
+      { answer: 'a. Cat', type: ['10'] },
+      { answer: 'b. Dog', type: ['5'] },
+      { answer: 'c. Tiger', type: ['0'] },
     ]
   }
 ]

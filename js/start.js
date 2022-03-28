@@ -1,8 +1,57 @@
 const main = document.querySelector('#main');
 const qna = document.querySelector('#qna');
+const result = document.querySelector('#result');
+const endPoint = qnaList.length;
+const select = [];
 
+function calResult(){
+    let pointArray = [
+        {name: '10', value: 0, key: 0},
+        {name: '5', value: 0, key: 1},
+        {name: '0', value: 0, key: 2}
+    ]
+    for(let i = 0; i < endPoint; i++) {
+        let target = qnaList[i].a[select[i]];
+        for(let j=0; j < target.type.length; j++) {
+            for(let k=0; k< pointArray.length; k++) {
+                if(target.type[j] === pointArray[k].name){
+                    pointArray[k].value += 1;
+                }
+            }
+        }
+    }
 
-function addAnswer(answerText, qIdx) {
+    let resultArray = pointArray.sort(function (a,b) {
+        if(a.value > b.value) {
+            return -1;
+        }
+        if(a.value < b.value) {
+            return 1;
+        }
+        return 0;
+    });
+
+    console.log(resultArray);
+
+    let resultWord = resultArray[0].key;
+    return resultWord;
+}
+
+function goResult() {
+    qna.style.WebkitAnimation = "fadeOut 1s";
+    qna.style.animation = "fadeOut 1s";
+    setTimeout(()=>{
+        result.style.WebkitAnimation = "fadeIn 1s";
+        result.style.animation = "fadeIn 1s";
+        setTimeout(()=>{
+            qna.style.display = "none";
+            result.style.display = "block";
+        },450)})
+
+    calResult();
+}
+
+function addAnswer(answerText, qIdx, idx) {
     let a = document.querySelector('.answerBox');
     let answer = document.createElement('button');
     answer.classList.add('answerList');
@@ -21,6 +70,8 @@ function addAnswer(answerText, qIdx) {
             children[i].style.animation = "fadeOut 0.5s";
         }
         setTimeout(()=>{
+            select[qIdx] = idx;
+
             for(let i=0; i < children.length; i++) {
                 children[i].style.display = 'none';
             }
@@ -30,14 +81,21 @@ function addAnswer(answerText, qIdx) {
 }
 
 function goNext(qIdx){ 
+    if(qIdx === endPoint) {
+        goResult();
+        return;
+    }
     let q = document.querySelector('.qBox');
     q.innerHTML = qnaList[qIdx].q;
     let img = document.querySelector('.imgBox');
     img.src=qnaList[qIdx].img;
     
     for(let i in qnaList[qIdx].a){
-        addAnswer(qnaList[qIdx].a[i].answer, qIdx);
+        addAnswer(qnaList[qIdx].a[i].answer, qIdx, i);
     }
+    let status = document.querySelector('.statusBar');
+    status.style.width = (100/endPoint) * (qIdx+1) + '%';
+
 }
 
 function begin() {

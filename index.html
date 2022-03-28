@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/qna.css">
+    <link rel="stylesheet" href="./css/result.css">
     <link rel="stylesheet" href="./css/animation.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,35 +17,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta charset="UTF-8">
-    <title>shit</title>
+    <title>museHorrorJS</title>
 </head>
 <body>
     <div class="container">
 
-        <section id="main" class="mx-auto mt-1 py-5 pt-5 px-3">
+        <section id="main" class="mx-auto mt-1 py-2 pt-2 px-3">
             <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
                 <img src="./img/main.png" alt="mainImage" class="img-fluid">
             </div>
             <h3 class="mt-2">Muse Horror JS projcect</h3>
             <p>
-                Welcome to modern art, select the correct answer
+                Welcome to contemporary art, select the correct answer
             </p>
             <button type="button" class="btn btn-outline-danger mt-3"
             onclick="js:begin()">START</button>
         </section>
 
         <section id="qna">
-            <div class="qBox my-5 py-3 mx-auto">
+            <div class="status mx-auto mt-5">
+                <div class="statusBar">
+
+                </div>
+            </div>
+
+            <div class="qBox my-2 py-2 mx-auto">
 
             </div>
             <img src="" alt="image" class="imgBox">
-            <div class="answerBox mt-5 mb-5">
+            <div class="answerBox mt-3 mb-5">
 
             </div>
         </section>
             
         <section id="result">
-
+            <h3 class="resultTitle mt-2">Your result</h3>
+            <img src="./img/result.png" alt="result" class="resultImg">
+            <div class="resultName"></div>
+            <div class="resultDesc"></div>
+            <button type="button">SHARE</button>
         </section>
 
     </div>

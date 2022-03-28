@@ -1,0 +1,14 @@
+#result {
+    display: none;
+}
+
+.resultTitle {
+    text-align: center;
+}
+
+.resultImg {
+    max-width: 700px;
+    max-height: 400px;
+    display: block;
+    margin: auto;
+}
